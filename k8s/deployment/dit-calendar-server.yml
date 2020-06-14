@@ -45,3 +45,6 @@ spec:
         volumeMounts:
           - name: dit-calendar-volume
             mountPath: /app/state
+        env:
+          - name: CORS_ALLOWORIGIN
+            value: "https://dit-calendar.github.io"
