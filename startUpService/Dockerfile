@@ -2,7 +2,7 @@ FROM roffe/kubectl:latest
 
 ENV oktetoKubeConfig value
 
-COPY deployment /deployment
+COPY ../k8s/deployment /deployment
 
 RUN apk add nginx
 COPY default.conf.template /etc/nginx/conf.d/default.conf.template
